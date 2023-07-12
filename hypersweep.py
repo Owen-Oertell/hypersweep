@@ -22,8 +22,8 @@ def runJob(main_name, parameters, job_name, job_group, slurm_parameters, conda_e
     job.close()
 
     # submit the job
-    #os.system("sbatch sbatch.sh")
-    #os.remove("sbatch.sh")
+    os.system("sbatch sbatch.sh")
+    os.remove("sbatch.sh")
 
 def main():
     # get all the parameters to sweep over
